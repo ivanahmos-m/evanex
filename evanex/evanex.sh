@@ -23,6 +23,8 @@ sudo apt-get install nmap -y
 echo nmap installation finnished
 
 sudo msfinstall
+sudo apt-get install netcat -y
+echo net cat installation finnished
 
 echo you finnished congragulations
 
