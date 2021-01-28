@@ -15,12 +15,19 @@ sudo curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/con
   ./msfinstall
 echo metasploit framework installation finished
 sudo git clone https://github.com/lanjelot/patator.git
+cd patator
+sudo cp patator.sh /usr/bin/
+cd ..
 echo patator installation finished
 sudo git clone https://github.com/derv82/wifite.git
+cd wifite
+sudo cp wifite.py /usr/bin/
+cd ..
 echo wifite installation finished also almost finnished
 sudo apt-get install nmap -y
+sudo apt-get install zenmap -y
 
-echo nmap installation finnished
+echo nmap and zenmap installation finnished
 
 sudo msfinstall
 sudo apt-get install netcat -y
